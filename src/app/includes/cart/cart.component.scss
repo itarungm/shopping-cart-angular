@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500&display=swap");
+
+// font-family: 'Urbanist', sans-serif;
+// font-family: 'Kaisei HarunoUmi', serif;
+// font-family: 'Poppins', sans-serif;
+
+section {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  //   border: 2px solid rgb(230, 222, 222);
+  //   background-color: rgb(206, 245, 248);
+}
+
+.shopping-cart-area {
+  width: 60%;
+  height: 500px;
+  padding: 1.5rem;
+  border-right: 2px solid rgb(230, 222, 222);
+
+  .bag-details {
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+  }
+
+  .item-outer {
+    // max-height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    .item {
+      margin: 15px 0;
+      border: 2px solid #f1efefe3;
+      padding: 12px;
+      // margin-right: 1rem;
+      padding-bottom: 0;
+      padding-right: 0;
+
+      .item-desc-container {
+        // border: 2px solid red;
+        display: flex;
+
+        .item-img {
+          // margin: 0 !important;
+          // padding: 0 !important;
+          img{
+            height:100px;
+            width:78px
+          }
+        }
+
+        .item-details {
+          display: flex;
+          width: 100%;
+            justify-content: space-between;
+          padding: 11px;
+          padding-top: 2px;
+          margin: 0;
+          .desc {
+            width: 65%;
+
+            .item-title {
+              padding-bottom: 0.2rem;
+              font-weight: bold;
+              font-size: 0.9rem;
+              font-family: "Kaisei HarunoUmi", serif;
+            }
+
+            .item-description {
+              line-height: 1;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: "Poppins", sans-serif;
+              margin-bottom: 12px;
+            }
+
+            .qty {
+              text-align: center;
+              padding: 3px 5px;
+              width: 24%;
+              background-color: #e7e7e79f;
+              font-family: "Poppins", sans-serif;
+              font-weight: bold;
+              font-size: 0.7rem;
+            }
+          }
+
+          .price-tag {
+            font-family: "Kaisei HarunoUmi", serif;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: right;
+            width: 35%;
+
+            .discount-tag {
+              font-size: 9.5px;
+              s {
+                font-family: "Poppins", sans-serif;
+                opacity: 0.6;
+              }
+              span {
+                color: #fd7685;
+              }
+            }
+          }
+        }
+      }
+      .add-ons {
+        display: flex;
+        font-size: 0.9rem;
+        padding-left: 12px;
+        font-family: "Poppins", sans-serif;
+        margin-left: 5rem;
+
+        .add-on-head {
+          font-weight: bold;
+        }
+
+        .add-on-items {
+          text-align: right;
+          width: 80%;
+          .add-on-item {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: rgb(105, 103, 103);
+            opacity: 0.7;
+            padding-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+
+            .add-on-price-tag {
+              color: #fd7686d3;
+            }
+            img {
+              height: 15px;
+              width: 15px;
+            }
+          }
+        }
+      }
+
+      .shopping-action-area {
+        display: flex;
+        margin-top: 1rem;
+        font-size: 12px;
+        letter-spacing: 2px;
+        // padding:5px;
+        font-family: "Poppins", sans-serif;
+        opacity: 0.9;
+        color: #e76f7da1;
+        margin-right: 12px;
+        border-top: 2px solid #f1efefe3;
+        .rmv-btn {
+          text-align: center;
+          padding: 5px 10px;
+          border-right: 2px solid #f1efefe3;
+        }
+
+        .move-to-wishlist {
+          padding: 5px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.price-area {
+  width: 45%;
+  padding: 1.3rem;
+  padding-right: 0;
+  // border: 2px solid rgb(230, 222, 222);
+  height: 500px;
+  .coupon-area {
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    .apply-coupon {
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: space-between;
+
+      .apply-coupon-left {
+        width: 70%;
+        .discount-tag-head {
+          font-size: 1rem;
+          padding-left: 0.4rem;
+          // color: red;
+        }
+        .discount-tag-subhead {
+          padding-left: 1.4rem;
+          padding-top: 0.2rem;
+          opacity: 0.8;
+          font-weight: 500;
+          font-size: 0.7rem !important;
+        }
+
+        .discount-tag-subhead-login {
+          color: #e76f7de3;
+          font-weight: 600;
+        }
+        img {
+          padding-top: 2px;
+        }
+
+        .discount-tag-subhead {
+          font-size: smaller;
+        }
+      }
+      .apply-coupon-btn {
+        width: 30%;
+        border: 1.5px solid #e76f7de3;
+        color: #e76f7daf;
+        padding: 10px 0;
+        text-align: center;
+
+        // img{
+        //     padding-top: 5px;
+        // }
+      }
+    }
+  }
+  .price-details {
+    background-color: #f7f6f4;
+    margin-top: 1rem;
+    margin-right: 1.2rem;
+    padding: 1rem;
+    h4 {
+      letter-spacing: 0.1rem;
+    }
+    .excel-area {
+      font-family: "Poppins", sans-serif;
+      padding: 1rem 0;
+    }
+
+    .total-amount {
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+      padding: 0.8rem 0;
+      border-top: 1px solid rgba(112, 110, 110, 0.849);
+      border-bottom: 1.4px solid rgba(112, 110, 110, 0.849);
+    }
+
+    .select-address {
+      margin-top: 1.4rem;
+      padding: 0.8rem 0;
+      letter-spacing: 0.2rem;
+      color: rgba(255, 255, 255, 0.938);
+      text-align: center;
+      background-color: #110300;
+    }
+  }
+}
+
+
+#scrollbar::-webkit-scrollbar {
+  width: 0;
+  background-color: #f5f5f5;
+}
+
+.skeleton{
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+
+@keyframes skeleton-loading {
+    0%{
+      background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+      background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.skeleton-text{
+  // width: 100%;
+  // height: 0.2rem;
+}
+

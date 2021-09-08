@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.brand-heading-font {
+  font-family: "Urbanist", sans-serif;
+}
+
+.flex-custom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-gray {
+  color: rgba(82, 79, 79, 0.692);
+  text-shadow: 1px 1px rgba(82, 79, 79, 0.158);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.pb-4 {
+  padding-bottom: 0.4rem;
+}
+
+.bold-bright {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
